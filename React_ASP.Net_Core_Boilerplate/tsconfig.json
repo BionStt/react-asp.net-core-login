@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "skipDefaultLibCheck": true,
+    "strict": false,
+    "lib": [ "es6", "dom" ],
+    "types": [ "webpack-env", "node" ],
+    "allowSyntheticDefaultImports": true,
+    "disableSizeLimit": true
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useWebpackText": true,
+    "useTranspileModule": true,
+    "doTypeCheck": true,
+    "forkChecker": true
+  },
+  "exclude": [
+    "bin",
+    "node",
+    "node_modules",
+    "wwwroot"
+  ]
+}

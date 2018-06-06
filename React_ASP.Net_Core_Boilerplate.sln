@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "React_ASP.Net_Core_Boilerplate", "React_ASP.Net_Core_Boilerplate\React_ASP.Net_Core_Boilerplate.csproj", "{D101011C-6071-48FF-9EA6-5571EF7C0917}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{0FDF1517-4C99-4DB8-9EF7-6AE40E6E8912}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{F39AF8C3-AC79-445C-9C8D-D47E4B38A5C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Repository_Layer.Common", "Service_Repository_Layer.Common\Service_Repository_Layer.Common.csproj", "{7D792918-A490-4666-9991-B15CFB06C605}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Repository_Layer.Common.DataTransferObjects", "Service_Repository_Layer.Common.DataTransferObjects\Service_Repository_Layer.Common.DataTransferObjects.csproj", "{D8C9ABFE-D505-4F4E-A129-354FA2823647}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Repository_Layer.Repo.Test", "Service_Repository_Layer.Repo.Test\Service_Repository_Layer.Repo.Test.csproj", "{6ECA795A-E9CD-415E-8D9E-442216309A9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Repository_Layer.Service.Test", "Service_Repository_Layer.Service.Test\Service_Repository_Layer.Service.Test.csproj", "{97476929-9249-48D3-8EFB-4BACF845E878}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{F0CCAD15-3540-488E-BD93-AABBE01A42F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Repository_Layer.Service", "Service_Repository_Layer.Service\Service_Repository_Layer.Service.csproj", "{F3C994A0-3E41-48C3-A967-D8785A999828}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Repository_Layer.Service.Contracts", "Service_Repository_Layer.Service.Contracts\Service_Repository_Layer.Service.Contracts.csproj", "{7222A6B9-5BE5-4DE3-A26D-4FCA8D28F6F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{20F9366F-437F-41CE-BCBF-8AB1A29FEFBF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Repository_Layer.Repo", "Service_Repository_Layer.Repo\Service_Repository_Layer.Repo.csproj", "{02A72AB5-742E-4A15-8375-E073BBA6221D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Repository_Layer.Entity", "Service_Repository_Layer.Entity\Service_Repository_Layer.Entity.csproj", "{F64F3F22-9D70-4DD5-8673-64171EC5D554}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Repository_Layer.Enums", "Service_Repository_Layer.Enums\Service_Repository_Layer.Enums.csproj", "{EF094FBE-B3D0-4632-B4E8-48CC4659060F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Repository_Layer.Repo.Contracts", "Service_Repository_Layer.Repo.Contracts\Service_Repository_Layer.Repo.Contracts.csproj", "{DBD68F4E-75A2-4A64-BF04-4F74B6A7C297}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D101011C-6071-48FF-9EA6-5571EF7C0917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D101011C-6071-48FF-9EA6-5571EF7C0917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D101011C-6071-48FF-9EA6-5571EF7C0917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D101011C-6071-48FF-9EA6-5571EF7C0917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D792918-A490-4666-9991-B15CFB06C605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D792918-A490-4666-9991-B15CFB06C605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D792918-A490-4666-9991-B15CFB06C605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D792918-A490-4666-9991-B15CFB06C605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C9ABFE-D505-4F4E-A129-354FA2823647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C9ABFE-D505-4F4E-A129-354FA2823647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C9ABFE-D505-4F4E-A129-354FA2823647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C9ABFE-D505-4F4E-A129-354FA2823647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECA795A-E9CD-415E-8D9E-442216309A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECA795A-E9CD-415E-8D9E-442216309A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECA795A-E9CD-415E-8D9E-442216309A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECA795A-E9CD-415E-8D9E-442216309A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97476929-9249-48D3-8EFB-4BACF845E878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97476929-9249-48D3-8EFB-4BACF845E878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97476929-9249-48D3-8EFB-4BACF845E878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97476929-9249-48D3-8EFB-4BACF845E878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3C994A0-3E41-48C3-A967-D8785A999828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C994A0-3E41-48C3-A967-D8785A999828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C994A0-3E41-48C3-A967-D8785A999828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C994A0-3E41-48C3-A967-D8785A999828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7222A6B9-5BE5-4DE3-A26D-4FCA8D28F6F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7222A6B9-5BE5-4DE3-A26D-4FCA8D28F6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7222A6B9-5BE5-4DE3-A26D-4FCA8D28F6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7222A6B9-5BE5-4DE3-A26D-4FCA8D28F6F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A72AB5-742E-4A15-8375-E073BBA6221D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A72AB5-742E-4A15-8375-E073BBA6221D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A72AB5-742E-4A15-8375-E073BBA6221D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A72AB5-742E-4A15-8375-E073BBA6221D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64F3F22-9D70-4DD5-8673-64171EC5D554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64F3F22-9D70-4DD5-8673-64171EC5D554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64F3F22-9D70-4DD5-8673-64171EC5D554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64F3F22-9D70-4DD5-8673-64171EC5D554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF094FBE-B3D0-4632-B4E8-48CC4659060F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF094FBE-B3D0-4632-B4E8-48CC4659060F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF094FBE-B3D0-4632-B4E8-48CC4659060F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF094FBE-B3D0-4632-B4E8-48CC4659060F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD68F4E-75A2-4A64-BF04-4F74B6A7C297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD68F4E-75A2-4A64-BF04-4F74B6A7C297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD68F4E-75A2-4A64-BF04-4F74B6A7C297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD68F4E-75A2-4A64-BF04-4F74B6A7C297}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D792918-A490-4666-9991-B15CFB06C605} = {F39AF8C3-AC79-445C-9C8D-D47E4B38A5C9}
+		{D8C9ABFE-D505-4F4E-A129-354FA2823647} = {F39AF8C3-AC79-445C-9C8D-D47E4B38A5C9}
+		{6ECA795A-E9CD-415E-8D9E-442216309A9D} = {0FDF1517-4C99-4DB8-9EF7-6AE40E6E8912}
+		{97476929-9249-48D3-8EFB-4BACF845E878} = {0FDF1517-4C99-4DB8-9EF7-6AE40E6E8912}
+		{F3C994A0-3E41-48C3-A967-D8785A999828} = {F0CCAD15-3540-488E-BD93-AABBE01A42F4}
+		{7222A6B9-5BE5-4DE3-A26D-4FCA8D28F6F5} = {F0CCAD15-3540-488E-BD93-AABBE01A42F4}
+		{02A72AB5-742E-4A15-8375-E073BBA6221D} = {20F9366F-437F-41CE-BCBF-8AB1A29FEFBF}
+		{F64F3F22-9D70-4DD5-8673-64171EC5D554} = {20F9366F-437F-41CE-BCBF-8AB1A29FEFBF}
+		{EF094FBE-B3D0-4632-B4E8-48CC4659060F} = {F39AF8C3-AC79-445C-9C8D-D47E4B38A5C9}
+		{DBD68F4E-75A2-4A64-BF04-4F74B6A7C297} = {20F9366F-437F-41CE-BCBF-8AB1A29FEFBF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B97E81D4-7289-4133-9834-3C87635E2EFA}
+	EndGlobalSection
+EndGlobal

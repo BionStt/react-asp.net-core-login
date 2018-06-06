@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "~/Views/Shared/_MVCLayout.cshtml";
+}
+
+
+<div id="react-app" asp-prerender-module="ClientApp/dist/main-server">Loading...</div>
+
+<p style="display: none;" id="user-info">@Json.Serialize(Model)</p>
+
+@section scripts {
+    <script src="~/dist/main-client.js" asp-append-version="true"></script>
+}

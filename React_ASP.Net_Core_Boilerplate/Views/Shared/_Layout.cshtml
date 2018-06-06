@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <title>React_ASP.Net_Core_Boilerplate</title>
+    <base href="~/" />
+    <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
+    <environment include="Development">
+        <link rel="stylesheet" href="~/dist/site.css" />
+        <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-sm-3'>
+                <div class='main-nav'>
+                    <div class='navbar navbar-inverse'>
+                        <div class='navbar-header'>
+                            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                                <span class='sr-only'>Toggle navigation</span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                            </button>
+                            <div class='navbar-brand'>Menu</div>
+                        </div>
+                        <div class='clearfix'></div>
+                        <div class='navbar-collapse collapse'>
+                            <ul class='nav navbar-nav'>
+                                <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")"><a asp-area="" asp-controller="Home" asp-action="Index"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-sm-9'>                
+                @RenderBody()
+                <div class="col-md-6 col-md-offset-3">
+                    <footer>
+                        <hr />
+                        <p>&copy; @DateTime.Now.Year - React_ASP.Net_Core_Boilerplate</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="~/dist/vendor.js" asp-append-version="true"></script>
+        <environment include="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        </environment>
+        <environment exclude="Development">
+            <script src="~/lib/jquery/dist/jquery.min.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        </environment>
+        @RenderSection("scripts", required: false)
+</body>
+</html>
