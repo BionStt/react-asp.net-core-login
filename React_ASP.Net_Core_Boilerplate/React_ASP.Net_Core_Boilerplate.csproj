@@ -99,6 +99,7 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\dist\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 </Project>
 

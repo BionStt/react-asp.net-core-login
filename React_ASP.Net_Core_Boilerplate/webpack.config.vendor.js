@@ -1,13 +1,19 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const merge = require('webpack-merge');
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = (env) => {
     const isDevBuild = !(env && env.prod);
-    const extractCSS = new ExtractTextPlugin('vendor.css');
+    const extractCSS = new MiniCssExtractPlugin({
+        // Options similar to the same options in webpackOptions.output
+        // both options are optional
+        filename: "vendor.css"
+    });           
 
     const sharedConfig = {
+        mode: isDevBuild ? "development" : "production",
         stats: { modules: false },
         resolve: { extensions: [ '.js' ] },
         module: {
@@ -37,6 +43,22 @@ module.exports = (env) => {
             filename: '[name].js',
             library: '[name]_[hash]',
         },
+        optimization: {
+            minimizer: [
+                new UglifyJsPlugin({
+                    uglifyOptions: {
+                        compress: {
+                            warnings: false,
+                            comparisons: false,
+                        },
+                        output: {
+                            comments: false,
+                            ascii_only: false,
+                        },
+                    },
+                }),
+            ],
+        },
         plugins: [
             new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' }), // Maps these identifiers to the jQuery package (because Bootstrap expects it to be a global variable)
             new webpack.NormalModuleReplacementPlugin(/\/iconv-loader$/, require.resolve('node-noop')), // Workaround for https://github.com/andris9/encoding/issues/16
@@ -49,7 +71,11 @@ module.exports = (env) => {
     const clientBundleConfig = merge(sharedConfig, {
         output: { path: path.join(__dirname, 'wwwroot', 'dist') },
         module: {
-            rules: [{ test: /\.css(\?|$)/, use: extractCSS.extract({ use: isDevBuild ? 'css-loader' : 'css-loader?minimize' })}        
+            rules: [
+                {
+                    test: /\.css(\?|$)/,
+                    use: [MiniCssExtractPlugin.loader].concat(isDevBuild ? 'css-loader' : 'css-loader?minimize')
+                }        
             ]
         },
         plugins: [
@@ -58,9 +84,7 @@ module.exports = (env) => {
                 path: path.join(__dirname, 'wwwroot', 'dist', '[name]-manifest.json'),
                 name: '[name]_[hash]'
             })
-        ].concat(isDevBuild ? [] : [
-            new webpack.optimize.UglifyJsPlugin()
-        ])
+        ]
     });
 
     const serverBundleConfig = merge(sharedConfig, {
